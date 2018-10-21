@@ -1,0 +1,20 @@
+.mui-bar.my_header {
+  background-color: #ff7b00;
+}
+.mui-bar.my_header .mui-title {
+  color: #fff;
+}
+.mui-bar.my_header .mui-icon {
+  position: absolute;
+  right: 10px;
+  color: #fff;
+}
+.mui-bar.my_footer {
+  background-color: #ff7b00;
+}
+.mui-bar.my_footer .mui-active span {
+  color: #000;
+}
+.mui-bar.my_footer span {
+  color: #fff;
+}

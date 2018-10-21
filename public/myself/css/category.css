@@ -1,0 +1,25 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.my-category {
+  width: 100%;
+  height: 100%;
+  padding-top: 44px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+.my-category .cate_left {
+  float: left;
+  width: 80px;
+  height: 100%;
+  background-color: pink;
+  position: relative;
+}
+.my-category .cate_right {
+  margin-left: 90px;
+  height: 100%;
+  background-color: blue;
+  position: relative;
+}
