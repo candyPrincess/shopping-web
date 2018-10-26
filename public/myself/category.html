@@ -43,43 +43,11 @@
 		<div class="cate_left">
 			<div class="mui-scroll-wrapper">
 				<div class="mui-scroll">
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123<br>
-					123
+					<ul class="my_categroyLeft">
+						<!-- <li class="active">
+							<a href="javascript:;">运动馆</a>
+						</li> -->
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -87,42 +55,39 @@
 		<div class="cate_right">
 			<div class="mui-scroll-wrapper">
 				<div class="mui-scroll">
-					456 <br>
-					456 <br>
-					456 <br>
-					456 <br>
-					456<br>
-					456<br>
-					456<br>
-					456<br>
-					456<br>
-					456<br>
-					456<br>
-					456<br>
-					456<br>
-					456<br>
-					456<br>
-					456<br>
-					456<br>
-					456<br>
-					456<br>
-					456<br>
-					456<br>
-					456<br>
-					456<br>
-					456<br>
-					456<br>
-					456<br>
-					456<br>
-					456<br>
-					456<br>
-					456<br>
-					456
-					
+					<ul class="my_categroyRight">
+						<!-- <li>
+							<a href="javascript:;">
+								<img src="./images/brand1.png" alt="">
+								<p>耐克</p>
+							</a>
+						</li> -->
+					</ul>
+
 				</div>
 			</div>
 		</div>
 	</div>
 </body>
+<!-- 一级分类页面模板 -->
+<script src="./assets/artTemplate/template-native.js"></script>
+<script type="text/template" id="firstCategory">
+	<% for(var i=0;i<rows.length;i++){%>
+	<li data-id="<%= rows[i].id %>">
+		<a href="javascript:;"><%= rows[i].categoryName %></a>
+	</li>
+	<% } %>
+</script>
+<!-- 耳机分类页面模板 -->
+<script type="text/template" id="secondCategory">
+	<% for(var i=0;i<rows.length;i++){%>
+	<li>
+		<a href="javascript:;">
+			<img src="<%= rows[i].brandLogo %>" alt="">
+			<p><%= rows[i].brandName %></p>
+		</a>
+	</li>
+	<% } %>
+</script>
 
 </html>

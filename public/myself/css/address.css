@@ -1,0 +1,16 @@
+.mui-content {
+  background-color: #fff;
+}
+.mui-content .address {
+  font-size: 14px;
+}
+.mui-content .address a {
+  color: #000;
+}
+.mui-content .mui-scroll > .mui-table-view:first-child {
+  margin-top: 0;
+  font-size: 14px;
+}
+.mui-content .mui-scroll > .mui-table-view:first-child .addAddress {
+  text-align: center;
+}
