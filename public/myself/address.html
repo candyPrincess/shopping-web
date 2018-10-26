@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./css/address.css">
+    <link rel="stylesheet" href="./assets/fontAwesome/css/font-awesome.min.css">
+    <script src="./assets/zepto/zepto.min.js"></script>
+    <script src="./assets/mui/js/mui.min.js"></script>
+    <script src="./js/address.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="mui-bar mui-bar-nav my_header">
+        <!-- <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a> -->
+        <h1 class="mui-title">收货地址管理</h1>
+        <a href="" class="mui-icon mui-icon-search"></a>
+    </header>
+    <nav class="mui-bar mui-bar-tab footer my_footer">
+        <a class="mui-tab-item" href="index.html">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">Home</span>
+        </a>
+        <a class="mui-tab-item" href="category.html">
+            <span class="mui-icon mui-icon-bars"></span>
+            <span class="mui-tab-label">Categories</span>
+        </a>
+        <a class="mui-tab-item" href="cart.html">
+            <span class="mui-icon fa fa-shopping-cart"></span>
+            <span class="mui-tab-label">Cart</span>
+        </a>
+        <a class="mui-tab-item mui-active" href="user.html">
+            <span class="mui-icon mui-icon-person"></span>
+            <span class="mui-tab-label">VIP</span>
+        </a>
+    </nav>
+
+    <div class="mui-content mui-scroll-wrapper">
+        <div class="mui-scroll">
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell mui-media">
+                    <a href="javascript:;">
+                        <div class="mui-media-body addAddress">
+                            添加收货地址
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="mui-table-view address">
+
+            </ul>
+        </div>
+    </div>
+
+    <script src="./assets/artTemplate/template-native.js"></script>
+    <script id="addressTpl" type="text/template">
+        <% for(var i=0;i<res.length;i++) { %>    
+        <li class="mui-table-view-cell mui-media mui-transitioning">
+            <div class="mui-slider-right mui-disabled">
+					<a class="mui-btn mui-btn-blue editBtn" data-id="<%=res[i].id%>">编辑</a>
+					<a class="mui-btn mui-btn-red deletBtn" data-id="<%=res[i].id %>">删除</a>
+			</div>
+            <div class="mui-slider-handle">
+                <a href="javascript:;">
+                    <div class="mui-media-body my_post">
+                        邮编: <%= res[i].postCode %>
+                        收货人: <%= res[i].recipients %>
+                        <p class='mui-ellipsis'><%= res[i].address %> <%= res[i].addressDetail %></p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <% } %>
+    </script>
+</body>
+
+</html>

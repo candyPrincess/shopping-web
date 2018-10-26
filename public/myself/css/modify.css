@@ -1,0 +1,23 @@
+.mui-input-group {
+  font-size: 14px;
+}
+.mui-input-group .get_vcode {
+  position: absolute;
+  color: blue;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  line-height: 40px;
+  margin-right: 10px;
+}
+.mui-input-group .mui-button-row {
+  background-color: #ff7b00;
+  margin-top: 10px;
+  height: 37px;
+  line-height: 37px;
+}
+.mui-input-group .mui-button-row .mui-btn {
+  padding-top: 3px;
+  background-color: #ff7b00;
+  border: none;
+}
