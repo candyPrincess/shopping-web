@@ -1,4 +1,9 @@
-$(function() {
+$(function () {
+  mui('body').on('tap', 'a', function () {
+    window.top.location.href = this.href;
+  });
+
+
   mui(".mui-scroll-wrapper").scroll({
     deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
   });
@@ -7,8 +12,8 @@ $(function() {
   $.ajax({
     url: "/category/queryTopCategory",
     type: "get",
-    success: function(result) {
-    //   console.log(result);
+    success: function (result) {
+      //   console.log(result);
       var html = template("firstCategory", result);
       // console.log(html);
       $(".my_categroyLeft").html(html);
@@ -22,7 +27,7 @@ $(function() {
   });
 
   //   绑定分类页面的点击事件
-  $(".my_categroyLeft").on("click", "li", function() {
+  $(".my_categroyLeft").on("click", "li", function () {
     //   点击让当前行高亮
     $(this).addClass("active").siblings().removeClass("active");
     // 获取当前点击的id
@@ -35,19 +40,19 @@ $(function() {
       data: {
         id: id
       },
-      success: function(result) {
+      success: function (result) {
         console.log(result);
         var html = template("secondCategory", result);
         // console.log(html);
         $(".my_categroyRight").html(html);
 
         // 如果没有数据
-        if(result.rows.length <=0){
-            $(".my_categroyRight").html("暂无数据");
+        if (result.rows.length <= 0) {
+          $(".my_categroyRight").html("暂无数据");
         }
       }
     });
   });
 
-  
+
 });

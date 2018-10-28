@@ -1,4 +1,8 @@
 $(function () {
+    mui('my_footer').on('tap', 'a', function () {
+        window.top.location.href = this.href;
+      });
+
     // 向服务器发送请求要数据.编辑地址
     if (localStorage.getItem("editAddress")) {
         // 取出本地存储的数据

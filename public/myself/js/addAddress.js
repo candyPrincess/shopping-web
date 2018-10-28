@@ -1,10 +1,30 @@
 $(function () {
-    $(".confirmbtn").on("click", function () {
-        var userName = $('[name="userName"]').val().trim();
-        var postCode = $('[name="postCode"]').val().trim();
-        var city = $('[name="city"]').val().trim();
-        var detailAddress = $('[name="detailAddress"]').val().trim();
+    mui('my_footer').on('tap', 'a', function () {
+        window.top.location.href = this.href;
+      });
 
+
+    $(".confirmbtn").on("click", function () {
+        var userName = $.trim($('[name="userName"]').val());
+        var postCode = $.trim($('[name="postCode"]').val());
+        var city = $.trim($('[name="city"]').val());
+        var detailAddress = $.trim($('[name="detailAddress"]').val());
+        if(!userName){
+            mui.toast("请输入正确的用户名");
+            return;
+        }
+        if(!postCode){
+            mui.toast("请输入合法的邮编");
+            return;
+        }
+        if(!detailAddress){
+            mui.toast("请输入详细的地址");
+            return;
+        }
+        if(!city){
+            mui.toast("请输入地址");
+            return;
+        }
         $.ajax({
             url:"/address/addAddress",
             type:"POST",

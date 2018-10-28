@@ -1,0 +1,73 @@
+.mui-content {
+  background-color: #fff;
+}
+.mui-content .deatilName {
+  font-size: 16px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.mui-content .detailPrice {
+  font-size: 14px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.mui-content .detailPrice .priceDis {
+  font-size: 22px;
+  color: red;
+}
+.mui-content .detailPrice .priceOld {
+  text-decoration: line-through;
+  color: #ccc;
+  padding-left: 10px;
+}
+.mui-content .detailSize {
+  font-size: 14px;
+  padding: 10px 10px 20px;
+  border-bottom: 1px solid #ccc;
+}
+.mui-content .detailSize span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 10px;
+}
+.mui-content .detailSize .active {
+  background-color: orange;
+}
+.mui-content .detailNum {
+  font-size: 14px;
+  padding: 10px;
+}
+.mui-content .detailCart {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.mui-content .detailCart ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.mui-content .detailCart ul li:first-of-type {
+  background-color: blue;
+}
+.mui-content .detailCart ul li:last-of-type {
+  background-color: red;
+}
+.mui-content .detailCart ul li {
+  float: left;
+  width: 50%;
+  height: 34px;
+  line-height: 34px;
+  border: 1px solid #ccc;
+}
+.mui-content .detailCart ul li a {
+  width: 100%;
+  font-size: 14px;
+  color: #fff;
+}

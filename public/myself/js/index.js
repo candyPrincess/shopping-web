@@ -1,4 +1,7 @@
 $(function() {
+  mui('body').on('tap', 'a', function () {
+    window.top.location.href = this.href;
+});
   // 轮播图
   var gallery = mui(".mui-slider");
   gallery.slider({
