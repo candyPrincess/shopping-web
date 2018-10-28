@@ -6,62 +6,70 @@
 body {
   background-color: #fff;
 }
-.mui-content {
+#refreshContainer {
   background-color: #fff;
+  position: absolute;
+  top: 44px;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  padding: 0 10px;
 }
-.mui-content .mui-row {
+#refreshContainer .mui-row {
   height: 36px;
   background-color: #f5f5f5;
   margin: 10px;
 }
-.mui-content .mui-row li {
+#refreshContainer .mui-row li {
   line-height: 16px;
   text-align: center;
   font-size: 14px;
 }
-.mui-content .mui-row li span {
+#refreshContainer .mui-row li span {
   font-size: 14px;
 }
-.my_life {
+#refreshContainer .my_life {
   margin-top: 10px;
   padding: 0 10px;
   overflow: hidden;
 }
-.my_life > ul > li {
+#refreshContainer .my_life > ul > li {
   margin-top: 10px;
   width: 50%;
   float: left;
   padding: 0 5px;
 }
-.my_life > ul > li a {
+#refreshContainer .my_life > ul > li a {
   display: block;
   padding: 0 5px;
   box-shadow: 0 0 5px #ccc;
   overflow: hidden;
 }
-.my_life > ul > li a img {
+#refreshContainer .my_life > ul > li a img {
   width: 100%;
 }
-.my_life > ul > li a > span {
+#refreshContainer .my_life > ul > li a > span {
   display: block;
   text-align: center;
   color: #8f8f94;
   font-size: 14px;
   padding: 0 8px;
+  height: 44px;
+  overflow: hidden;
 }
-.my_life > ul > li a > p {
+#refreshContainer .my_life > ul > li a > p {
   text-align: center;
 }
-.my_life > ul > li a > p > span:first-of-type {
+#refreshContainer .my_life > ul > li a > p > span:first-of-type {
   color: red;
   font-size: 14px;
 }
-.my_life > ul > li a > p > span:last-of-type {
+#refreshContainer .my_life > ul > li a > p > span:last-of-type {
   color: #ccc;
   font-size: 14px;
   text-decoration: line-through;
 }
-.my_life > ul > li a > button {
+#refreshContainer .my_life > ul > li a > button {
   display: block;
   margin: 0 auto;
   background-color: #ff7b00;

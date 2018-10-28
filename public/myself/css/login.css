@@ -1,0 +1,19 @@
+.mui-content {
+  background-color: #fff;
+}
+.mui-content .mui-input-group {
+  font-size: 14px;
+}
+.mui-content .mui-input-group .mui-button-row {
+  margin-top: 10px;
+  background-color: #ff7b00;
+  height: 37px;
+}
+.mui-content .mui-input-group .mui-button-row button {
+  background-color: #ff7b00;
+  border: none;
+  line-height: 15px;
+}
+.mui-content .mui-input-group .freelogin {
+  border: none;
+}

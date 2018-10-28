@@ -1,0 +1,10 @@
+.mui-content {
+  background-color: #fff;
+  font-size: 14px;
+}
+.mui-content > .mui-table-view:first-child {
+  margin-top: 0;
+}
+.mui-content .logoutBtn {
+  text-align: center;
+}

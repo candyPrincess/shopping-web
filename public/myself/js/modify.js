@@ -1,4 +1,8 @@
 $(function() {
+  mui('my_footer').on('tap', 'a', function () {
+    window.top.location.href = this.href;
+  });
+  
   // 获取输入的内容
   $(".modifyPass").on("click", function() {
     var originPass = $('[name="originPass"]').val();
@@ -24,6 +28,7 @@ $(function() {
             return;
         }
         console.log(res);
+        location.href ="user.html";
       }
     });
   });

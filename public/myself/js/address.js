@@ -1,4 +1,9 @@
 $(function () {
+    mui('my_footer').on('tap', 'a', function () {
+        window.top.location.href = this.href;
+      });
+
+      
     mui('.mui-scroll-wrapper').scroll({
         deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
     });
@@ -27,8 +32,10 @@ $(function () {
     $(".address").on("click", ".deletBtn", function () {
         // 弹出确认是否删除框
         var id= $(this).data("id");
-        var li=$(this).parent().parent();
+        // var li = this.parentNode.parentNode;
         // console.log(li);
+        var li=$(this).parent().parent()[0];
+        console.log(li);
         mui.confirm("是否确认删除", function (res) {
             // console.log(res.index);
             
@@ -48,13 +55,18 @@ $(function () {
                     }
                 })
             } else if(res.index == 0){
-                //取消删除
-                // mui.swipeoutClose(li);
+                //取消删除 必须传入dom元素
+                mui.swipeoutClose(li);
                 
             }
         });
     })
 
+
+    //点击确定跳转到user页面
+    $(".buttonuser").on("click",function(){
+        location.href = "user.html";
+    })
 
     //编辑收货地址
     $(".address").on("click",".editBtn",function(){
